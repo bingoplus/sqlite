@@ -27,3 +27,6 @@ app.get('/sinaweibo',function(req,res){
 app.get('/uc',function(req,res){
   res.render('uc')
 })
+app.get('/upload',function(req,res){
+  res.render('upload')
+})
