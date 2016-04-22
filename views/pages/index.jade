@@ -1,19 +1,21 @@
-extends ../layout
-
-block content
-	.container
-		.row
-			.col-md-7
-				
-			.col-md-5
-				dl.dl-horizontal
-					dt 电影名字
-					dd 阿甘正传
-					dt 导演
-					dd tom
-					dt 语言
-					dd english
-					dt 上映年份
-					dd 2016
-					dt 简介
-					dd 很活泼孤鸿寡鹄 
+doctype html
+html
+	head
+		meta(charset="utf-8")
+		title #{title}
+		include ../includes/head
+	body.skin
+		.wrapper
+			.container
+				.only-logo
+					.navbar
+						.navbar-header
+							img(src="./images/logo.png" alt="")
+				.row.home-contents
+					.col-md-6.col-sm-6
+						.intro-section
+							a.btn.btn-info.btn-lg.standard-button(href='./upload' target="_blank") 上传文件
+							a.btn.btn-info.btn-lg.standard-button(href='./map' target="_blank") 数据展示
+					.col-md-6.col-sm-6.hidden-xs
+						.phone-image
+							img.img-responsive(src="./images/phone.png" alt="")

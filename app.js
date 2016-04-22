@@ -18,3 +18,12 @@ app.get('/map',function(req,res){
 app.get('/yixin',function(req,res){
   res.render('yixin')
 })
+app.get('/momo',function(req,res){
+  res.render('momo')
+})
+app.get('/sinaweibo',function(req,res){
+  res.render('sinaweibo')
+})
+app.get('/uc',function(req,res){
+  res.render('uc')
+})
