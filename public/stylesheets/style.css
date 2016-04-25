@@ -19,18 +19,6 @@
 @viewport {
     width: device-width;
 }
-.skin{
-    background-color: #3c8dbc !important;
-}
-.intro-section{
-    padding-top: 200px;
-}
-.only-logo{
-    margin-left: 16%;
-}
-.intro-section>a{
-    margin-left: 100px;
-    padding-left: 50px;
-    padding-right: 50px;
-    opacity: 0.9;
+a.navbar-brand{
+    padding-left: 40%;
 }

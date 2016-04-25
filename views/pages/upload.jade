@@ -17,7 +17,8 @@ html
 									a 数据库文件上传
 								li
 									a(href='./map') 应用程序数据展示
-			.content
-				form(method='post' enctype='multipart/form-data' action="/file-upload")
+		block content							
+			.container
+				form(method='post' enctype='multipart/form-data' action="/upload")
 					input(type='file' name="thumbnail")
 					input(type='submit')
