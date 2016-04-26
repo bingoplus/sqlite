@@ -2,6 +2,8 @@ doctype html
 html
 	head
 		meta(charset="utf-8")
+		meta(http-equiv="X-UA-Compatible" content="IE=edge")
+		meta(content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport")
 		title #{title}
 		include ../includes/head
 	body.hold-transition.skin-blue.fixed.sidebar-mini
@@ -17,9 +19,15 @@ html
 				section.sidebar
 					ul.sidebar-menu
 						li.header 导航
+						li.header upload
+						li.active
+							a(href='/upload')
+								i.fa.fa-cloud-upload
+								span 数据库文件上传
+						li.header display
 						li.treeview
 							a(href='#')
-								i.fa.fa-dashboard
+								i.fa.fa-globe
 								span 地图数据展示
 								i.fa.fa-angle-left.pull-right
 							ul.treeview-menu
@@ -31,9 +39,9 @@ html
 									a(href='#')
 										i.fa.fa-circle-o
 										| Dashboard v2
-						li.treeview.active
+						li.treeview
 							a(href='#')
-								i.fa.fa-dashboard
+								i.fa.fa-user-plus
 								span 易信数据展示
 								i.fa.fa-angle-left.pull-right
 							ul.treeview-menu
@@ -47,8 +55,8 @@ html
 										| Dashboard v2
 						li.treeview
 							a(href='#')
-								i.fa.fa-dashboard
-								span 默默数据展示
+								i.fa.fa-comments
+								span 陌陌数据展示
 								i.fa.fa-angle-left.pull-right
 							ul.treeview-menu
 								li
@@ -61,7 +69,7 @@ html
 										| Dashboard v2
 						li.treeview
 							a(href='#')
-								i.fa.fa-dashboard
+								i.fa.fa-weibo
 								span 新浪微博数据展示
 								i.fa.fa-angle-left.pull-right
 							ul.treeview-menu
@@ -75,7 +83,7 @@ html
 										| Dashboard v2
 						li.treeview
 							a(href='#')
-								i.fa.fa-dashboard
+								i.fa.fa-internet-explorer
 								span UC浏览器数据展示
 								i.fa.fa-angle-left.pull-right
 							ul.treeview-menu
@@ -93,7 +101,7 @@ html
 					ol.breadcrumb
 						li
 							i.fa.fa-dashboard
-							| 测试	
+							|     测试	
 				section.content
 					.row
 						.col-md-12

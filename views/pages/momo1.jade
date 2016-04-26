@@ -97,59 +97,34 @@ html
 										| Dashboard v2
 			.content-wrapper
 				section.content-header
-					h1 数据上传
-						small #{tiptitle}
+					h1 ceshi
 					ol.breadcrumb
 						li
 							i.fa.fa-dashboard
-							| 数据上传	
+							|     测试	
 				section.content
 					.row
-						.col-md-6
+						.col-md-12
 							.box.box-primary
-								.box-header.with-border
-									h3.box-title 地图数据库文件上传
+								.box-header
+									h3.box-title  ceshi
 								.box-body
-									form(method='post' enctype='multipart/form-data' action="/upload/map")
-										input.btn.btn-default.col-xs-7(type='file' name="thumbnail")
-										input.btn.btn-primary.pull-right(type='submit')
-								.box-footer
-						.col-md-6
-							.box.box-success
-								.box-header.with-border
-									h3.box-title 易信数据库文件上传
-								.box-body
-									form(method='post' enctype='multipart/form-data' action="/upload/yixin")
-										input.btn.btn-default.col-xs-7(type='file' name="thumbnail")
-										input.btn.btn-success.pull-right(type='submit')
-								.box-footer
-						.col-md-6
-							.box.box-info
-								.box-header.with-border
-									h3.box-title 陌陌数据库文件上传
-								.box-body
-									form(method='post' enctype='multipart/form-data' action="/upload/momo")
-										input.btn.btn-default.col-xs-7(type='file' name="thumbnail")
-										input.btn.btn-info.pull-right(type='submit')
-								.box-footer
-						.col-md-6
-							.box.box-danger
-								.box-header.with-border
-									h3.box-title 新浪数据库文件上传
-								.box-body
-									form(method='post' enctype='multipart/form-data' action="/upload/sinaweibo")
-										input.btn.btn-default.col-xs-7(type='file' name="thumbnail")
-										input.btn.btn-danger.pull-right(type='submit')
-								.box-footer
-						.col-md-6
-							.box.box-warning
-								.box-header.with-border
-									h3.box-title  UC浏览器数据库文件上传
-								.box-body
-									form(method='post' enctype='multipart/form-data' action="/upload/uc")
-										input.btn.btn-default.col-xs-7(type='file' name="thumbnail")
-										input.btn.btn-warning.pull-right(type='submit')
-								.box-footer
+									table#table.table.table-bordered.table-striped
+										thead
+											tr
+												th 姓名
+												th 姓名
+												th 姓名
+												th 姓名
+												th 姓名
+										tbody
+										tfoot
+											tr
+												th 姓名
+												th 姓名
+												th 姓名
+												th 姓名
+												th 姓名
 			footer.main-footer
 				.pull-right.hidden-xs
 					b Version
@@ -157,7 +132,3 @@ html
 				strong Copyright &copy 2016 重庆邮电大学计算机科学与技术学院  
 				|All right reserved.
 			.control-sidebar-bg
-
-
-		
-		
